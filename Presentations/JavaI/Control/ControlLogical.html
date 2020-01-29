@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logical Operators</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/general.css">
+</head>
+<body>
+
+<script src="ControlTOC.js"></script>
+<div class="container main">
+
+    <table cellpadding="10" class="slide_table">
+
+        <tr>
+            <h1 class="mainTitle">Logical Operators</h1>
+        </tr>
+        <tr>
+            <td class="bullet-star">
+                <button type="button" class="btn btn-info"
+                        onclick="showConsoleText01()">
+                    <span class="glyphicon glyphicon-next"></span>
+                    <h3 style="display: inline;">*</h3>
+                </button>
+            </td>
+            <td class="bullet-subpoint">
+				<span id="consoleText01">
+					Logical operators allow us to combine multiple boolean values to produce a single boolean value.
+				</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="bullet-star">
+                <button type="button" class="btn btn-info"
+                        onclick="showConsoleText02()">
+                    <span class="glyphicon glyphicon-next"></span>
+                    <h3 style="display: inline;">*</h3>
+                </button>
+            </td>
+            <td class="bullet-subpoint">
+				<span id="consoleText02">
+
+                    <strong>&&</strong>
+                    <table cellpadding="5" style="padding-top: 1rem; padding-left: 2rem;">
+                        <tr>
+                            <td class="bullet-star">
+                                <button type="button" class="btn btn-info"
+                                        onclick="showConsoleText03()">
+                                    <span class="glyphicon glyphicon-next"></span>
+                                    <h3 style="display: inline;">*</h3>
+                                </button>
+                            </td>
+                            <td class="bullet-subpoint">
+                                <span id="consoleText03">
+                                    And
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bullet-star">
+                                <button type="button" class="btn btn-info"
+                                        onclick="showConsoleText04()">
+                                    <span class="glyphicon glyphicon-next"></span>
+                                    <h3 style="display: inline;">*</h3>
+                                </button>
+                            </td>
+                            <td class="bullet-subpoint">
+                                <span id="consoleText04">
+                                    Returns a true value if both expressions are true.
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bullet-star">
+                                <button type="button" class="btn btn-info"
+                                        onclick="showConsoleText05()">
+                                    <span class="glyphicon glyphicon-next"></span>
+                                    <h3 style="display: inline;">*</h3>
+                                </button>
+                            </td>
+                            <td class="bullet-subpoint">
+                                <span id="consoleText05">
+                                    This operator only evaluates the second expression if necessary.
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <strong>||</strong>
+                    <table cellpadding="5" style="padding-top: 1rem; padding-left: 2rem;">
+                        <tr>
+                            <td class="bullet-star">
+                                <button type="button" class="btn btn-info"
+                                        onclick="showConsoleText06()">
+                                    <span class="glyphicon glyphicon-next"></span>
+                                    <h3 style="display: inline;">*</h3>
+                                </button>
+                            </td>
+                            <td class="bullet-subpoint">
+                                <span id="consoleText06">
+                                    Or
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bullet-star">
+                                <button type="button" class="btn btn-info"
+                                        onclick="showConsoleText07()">
+                                    <span class="glyphicon glyphicon-next"></span>
+                                    <h3 style="display: inline;">*</h3>
+                                </button>
+                            </td>
+                            <td class="bullet-subpoint">
+                                <span id="consoleText07">
+                                    Returns a true value if either expression is true.
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bullet-star">
+                                <button type="button" class="btn btn-info"
+                                        onclick="showConsoleText08()">
+                                    <span class="glyphicon glyphicon-next"></span>
+                                    <h3 style="display: inline;">*</h3>
+                                </button>
+                            </td>
+                            <td class="bullet-subpoint">
+                                <span id="consoleText08">
+                                    This operator only evaluates the second expression if necessary.
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <strong>&</strong>
+                    <table cellpadding="5" style="padding-top: 1rem; padding-left: 2rem;">
+                        <tr>
+                            <td class="bullet-star">
+                                <button type="button" class="btn btn-info"
+                                        onclick="showConsoleText09()">
+                                    <span class="glyphicon glyphicon-next"></span>
+                                    <h3 style="display: inline;">*</h3>
+                                </button>
+                            </td>
+                            <td class="bullet-subpoint">
+                                <span id="consoleText09">
+                                    And  (bitwise and)
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bullet-star">
+                                <button type="button" class="btn btn-info"
+                                        onclick="showConsoleText10()">
+                                    <span class="glyphicon glyphicon-next"></span>
+                                    <h3 style="display: inline;">*</h3>
+                                </button>
+                            </td>
+                            <td class="bullet-subpoint">
+                                <span id="consoleText10">
+                                    Returns a true value if both expressions are true.
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bullet-star">
+                                <button type="button" class="btn btn-info"
+                                        onclick="showConsoleText11()">
+                                    <span class="glyphicon glyphicon-next"></span>
+                                    <h3 style="display: inline;">*</h3>
+                                </button>
+                            </td>
+                            <td class="bullet-subpoint">
+                                <span id="consoleText11">
+                                    This operator always evaluates both expressions.
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bullet-star">
+                                <button type="button" class="btn btn-info"
+                                        onclick="showConsoleText12()">
+                                    <span class="glyphicon glyphicon-next"></span>
+                                    <h3 style="display: inline;">*</h3>
+                                </button>
+                            </td>
+                            <td class="bullet-subpoint">
+                                <span id="consoleText12">
+                                    For interger types, this actually calculates a binary 'and' of the two operands.
+                                    (1010 & 0110) evaluates to what? <input type="text">
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <strong>|</strong>
+                    <table cellpadding="5" style="padding-top: 1rem; padding-left: 2rem;">
+                        <tr>
+                            <td class="bullet-star">
+                                <button type="button" class="btn btn-info"
+                                        onclick="showConsoleText13()">
+                                    <span class="glyphicon glyphicon-next"></span>
+                                    <h3 style="display: inline;">*</h3>
+                                </button>
+                            </td>
+                            <td class="bullet-subpoint">
+                                <span id="consoleText13">
+                                    Or  (bitwise or)
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bullet-star">
+                                <button type="button" class="btn btn-info"
+                                        onclick="showConsoleText14()">
+                                    <span class="glyphicon glyphicon-next"></span>
+                                    <h3 style="display: inline;">*</h3>
+                                </button>
+                            </td>
+                            <td class="bullet-subpoint">
+                                <span id="consoleText14">
+                                    Returns a true value if either expressions is true.
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bullet-star">
+                                <button type="button" class="btn btn-info"
+                                        onclick="showConsoleText15()">
+                                    <span class="glyphicon glyphicon-next"></span>
+                                    <h3 style="display: inline;">*</h3>
+                                </button>
+                            </td>
+                            <td class="bullet-subpoint">
+                                <span id="consoleText15">
+                                    This operator always evaluates both expressions.
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bullet-star">
+                                <button type="button" class="btn btn-info"
+                                        onclick="showConsoleText16()">
+                                    <span class="glyphicon glyphicon-next"></span>
+                                    <h3 style="display: inline;">*</h3>
+                                </button>
+                            </td>
+                            <td class="bullet-subpoint">
+                                <span id="consoleText16">
+                                    For integer types, this actually calculates a binary 'or' of the two operands.
+                                    (1010 | 0110) evaluates to what?  <input type="text">
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <strong>!</strong>
+                    <table cellpadding="5" style="padding-top: 1rem; padding-left: 2rem;">
+                        <tr>
+                            <td class="bullet-star">
+                                <button type="button" class="btn btn-info"
+                                        onclick="showConsoleText17()">
+                                    <span class="glyphicon glyphicon-next"></span>
+                                    <h3 style="display: inline;">*</h3>
+                                </button>
+                            </td>
+                            <td class="bullet-subpoint">
+                                <span id="consoleText17">
+                                    Not
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bullet-star">
+                                <button type="button" class="btn btn-info"
+                                        onclick="showConsoleText18()">
+                                    <span class="glyphicon glyphicon-next"></span>
+                                    <h3 style="display: inline;">*</h3>
+                                </button>
+                            </td>
+                            <td class="bullet-subpoint">
+                                <span id="consoleText18">
+                                    Reverses the value of the expression.
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+
+				</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="bullet-star">
+                <button type="button" class="btn btn-info"
+                        onclick="showConsoleText19()">
+                    <span class="glyphicon glyphicon-next"></span>
+                    <h3 style="display: inline;">*</h3>
+                </button>
+            </td>
+            <td class="bullet-subpoint">
+				<span id="consoleText19">
+					<strong>Examples</strong><br>
+                    <img class="grid-img" src="../../images/LogicalOpExamples.png">
+				</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="bullet-star">
+                <button type="button" class="btn btn-info"
+                        onclick="showConsoleText20()">
+                    <span class="glyphicon glyphicon-next"></span>
+                    <h3 style="display: inline;">*</h3>
+                </button>
+            </td>
+            <td class="bullet-subpoint">
+				<span id="consoleText20">
+					Demo IT!
+				</span>
+            </td>
+        </tr>
+
+    </table>
+</div>
+</body>
+<script src="../../js/General.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+</html>

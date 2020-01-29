@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String Comparison</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/general.css">
+</head>
+<body>
+
+<script src="ControlTOC.js"></script>
+<div class="container main">
+
+    <table cellpadding="10" class="slide_table">
+        <tr>
+            <h1 class="mainTitle">String Comparison</h1>
+        </tr>
+
+        <tr>
+            <td class="bullet-star">
+                <button type="button" class="btn btn-info"
+                        onclick="showConsoleText01()">
+                    <span class="glyphicon glyphicon-next"></span>
+                    <h3 style="display: inline;">*</h3>
+                </button>
+            </td>
+            <td class="bullet-subpoint">
+				<span id="consoleText01">
+					Strings are objects.
+				</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="bullet-star">
+                <button type="button" class="btn btn-info"
+                        onclick="showConsoleText02()">
+                    <span class="glyphicon glyphicon-next"></span>
+                    <h3 style="display: inline;">*</h3>
+                </button>
+            </td>
+            <td class="bullet-subpoint">
+				<span id="consoleText02">
+					don't use '<strong>==</strong>' to compare objects.
+				</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="bullet-star">
+                <button type="button" class="btn btn-info"
+                        onclick="showConsoleText03()">
+                    <span class="glyphicon glyphicon-next"></span>
+                    <h3 style="display: inline;">*</h3>
+                </button>
+            </td>
+            <td class="bullet-subpoint">
+				<span id="consoleText03">
+					<strong>==</strong> compares the location of the object, which is not typically what you want to do.
+				</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="bullet-star">
+                <button type="button" class="btn btn-info"
+                        onclick="showConsoleText04()">
+                    <span class="glyphicon glyphicon-next"></span>
+                    <h3 style="display: inline;">*</h3>
+                </button>
+            </td>
+            <td class="bullet-subpoint">
+				<span id="consoleText04">
+					When comparing objects, use the <strong>.equals()</strong>  method.
+				</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="bullet-star">
+                <button type="button" class="btn btn-info"
+                        onclick="showConsoleText05()">
+                    <span class="glyphicon glyphicon-next"></span>
+                    <h3 style="display: inline;">*</h3>
+                </button>
+            </td>
+            <td class="bullet-subpoint">
+				<span id="consoleText05">
+					Demo IT!
+				</span>
+            </td>
+        </tr>
+
+    </table>
+</div>
+</body>
+<script src="../../js/General.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+</html>
