@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Getting Input from the Console</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/general.css">
+</head>
+<body>
+
+<script src="ConsoleTOC.js"></script>
+<div class="container main">
+    <h1 class="mainTitle">Getting Input from the Console</h1>
+
+    <table cellpadding="10" class="slide_table">
+        <tr>
+            <td>
+                <button type="button" class="btn btn-info"
+                        onclick="showConsoleText01()">
+                    <span class="glyphicon glyphicon-next"></span>
+                    <h3 style="display: inline;">*</h3>
+                </button>
+            </td>
+            <td class="bullet-subpoint">
+				<span id="consoleText01">
+                    <table cellpadding="4">
+                        <tr>
+                            <td><img class="sm-img" src="../../images/SteeringWheel.jpg" alt=""></td>
+                            <td>
+                                <h2>Creating the Steering Wheel</h2>
+                                Getting control of the car.
+                            </td>
+                        </tr>
+                    </table>
+				</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="btn btn-info"
+                        onclick="showConsoleText02()">
+                    <span class="glyphicon glyphicon-next"></span>
+                    <h3 style="display: inline;">*</h3>
+                </button>
+            </td>
+            <td class="bullet-subpoint" id="Scanner">
+				<span id="consoleText02">
+					The Scanner class allows us to get data input that the user enters into the console.
+				</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="btn btn-info"
+                        onclick="showConsoleText03()">
+                    <span class="glyphicon glyphicon-next"></span>
+                    <h3 style="display: inline;">*</h3>
+                </button>
+            </td>
+            <td class="bullet-subpoint">
+				<span id="consoleText03">
+                    <strong id="ImportStatements">Import Statements</strong><br>
+                    <table cellpadding="5" style="padding-top: 1rem; padding-left: 2rem;">
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-info"
+                                        onclick="showConsoleText04()">
+                                    <span class="glyphicon glyphicon-next"></span>
+                                    <h3 style="display: inline;">*</h3>
+                                </button>
+                            </td>
+                            <td class="bullet-subpoint">
+                                <span id="consoleText04">
+                                    Before we can use the Scanner class, we'll need to import it.
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-info"
+                                        onclick="showConsoleText05()">
+                                    <span class="glyphicon glyphicon-next"></span>
+                                    <h3 style="display: inline;">*</h3>
+                                </button>
+                            </td>
+                            <td class="bullet-subpoint">
+                                <span id="consoleText05">
+                                    import java.util.Scanner;
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-info"
+                                        onclick="showConsoleText06()">
+                                    <span class="glyphicon glyphicon-next"></span>
+                                    <h3 style="display: inline;">*</h3>
+                                </button>
+                            </td>
+                            <td class="bullet-subpoint">
+                                <span id="consoleText06">
+                                    Automated Imports
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="btn btn-info"
+                        onclick="showConsoleText07()">
+                    <span class="glyphicon glyphicon-next"></span>
+                    <h3 style="display: inline;">*</h3>
+                </button>
+            </td>
+            <td class="bullet-subpoint">
+				<span id="consoleText07">
+					Demo Time!
+				</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="btn btn-info"
+                        onclick="showConsoleText08()">
+                    <span class="glyphicon glyphicon-next"></span>
+                    <h3 style="display: inline;">*</h3>
+                </button>
+            </td>
+            <td class="bullet-subpoint">
+				<span id="consoleText08">
+                    <strong>Important Notes</strong><br>
+                    <table cellpadding="5" style="padding-top: 1rem; padding-left: 2rem;">
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-info"
+                                        onclick="showConsoleText09()">
+                                    <span class="glyphicon glyphicon-next"></span>
+                                    <h3 style="display: inline;">*</h3>
+                                </button>
+                            </td>
+                            <td class="bullet-subpoint">
+                                <span id="consoleText09">
+                                    Every individual entry to the scanner is called a token, and, by default, tokens
+                                    are separated by any whitespace.
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-info"
+                                        onclick="showConsoleText10()">
+                                    <span class="glyphicon glyphicon-next"></span>
+                                    <h3 style="display: inline;">*</h3>
+                                </button>
+                            </td>
+                            <td class="bullet-subpoint">
+                                <span id="consoleText10">
+                                    In addition to <strong>nextLine</strong>, there are several other methods that will
+                                    return the user input as a different type, for example, <strong>nextInt</strong>
+                                    will return the user input as type int.
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                </span>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+<script src="../../js/General.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+</html>
