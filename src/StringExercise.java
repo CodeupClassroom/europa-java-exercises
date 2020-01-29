@@ -12,7 +12,8 @@ public class StringExercise {
     // main method for String exercises
     public static void main(String[] args) {
         StringExercise se = new StringExercise();
-//        se.ex01();
+        System.out.println();
+        se.ex01();
         se.talkToBob();
     }
 
@@ -21,6 +22,7 @@ public class StringExercise {
      * desired output and print it out to the console, you can do this with only one String
      * variable and one print statement for each output example.
      *
+     * We don't need no education,
      * We don't need no thought control
      *
      * Check "this" out!, "s inside of "s!
@@ -31,8 +33,8 @@ public class StringExercise {
      * and the amazing triple backslash \\\!
      */
     public void ex01() {
-        String string = new String();
-        string = "We don't need no thought control\n";
+        String string = new String("We don't need no education,\n");
+        string += "We don't need no thought control\n";
         System.out.println(string);
         string = "Check \"this\" out!, \"s inside of \"s!\n";
         System.out.println(string);
@@ -62,7 +64,7 @@ public class StringExercise {
         String textMessage = "";
         Scanner s = new Scanner(System.in);
         System.out.printf("\n\nBob is in. You can message him.\n");
-        while (true) {
+        do {
             System.out.print("\nType text to Bob: ");
             textMessage = s.nextLine();
 
@@ -70,9 +72,6 @@ public class StringExercise {
             if (textMessage == null || textMessage.length() == 0) {
                 System.out.println("Fine. Be that way!");
                 continue;
-            }
-            if (textMessage.equals("Bye.")) {
-                break;
             }
 
             // convert to letter
@@ -89,7 +88,7 @@ public class StringExercise {
                     break;
             }
 
-        } while (textMessage.charAt(0) == 'y');
+        } while (!textMessage.equals("Bye."));
         System.out.printf("\n\nGoodbye\n\n");
         s.close();
     }
