@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Console Presentation</title>
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../css/general.css">
+</head>
+<body>
+
+
+	<script src="ConsoleTOC.js"></script>
+	<div class="container">
+		<div class="main">
+			<h1 class="mainTitle">Console IO</h1>
+			<div class="row top-buffer bot-buffer">
+			    <div class="col-lg">
+			      <img class="grid-img" src="../../images/SpacecraftConsole.jpg">
+			    </div>
+			    <div class="col-lg">
+			      <img class="grid-img" src="../../images/nuclear-facility.jpg">
+			    </div>
+			    <div class="col-lg">
+			      <img class="grid-img" src="../../images/TBirdConsole.jpg">
+			    </div>
+			</div>
+
+			<button type="button" class="btn btn-info" onclick="showConsoleText01()">
+				<span class="glyphicon glyphicon-next" ></span> 
+				<h2 style="display: inline;">*</h2>
+			</button>
+			<label id="consoleText01" class="bullet-point">
+				What is a console?
+			</label><br>
+			
+			<table cellpadding="10" style="padding-top: 1rem; padding-left: 2rem;">
+				<tr>
+					<td>
+						<button type="button" class="btn btn-info" 
+								onclick="showConsoleText02()">
+							<span class="glyphicon glyphicon-next" ></span> 
+							<h3 style = "display: inline;">*</h3>
+						</button>							
+					</td>
+					<td class="bullet-subpoint">
+						<span id="consoleText02" >
+							An interface to display information from a device and allow control of the device.
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button type="button" class="btn btn-info"
+								onclick="showConsoleText03()">
+							<span class="glyphicon glyphicon-next"></span>
+							<h3 style="display: inline;">*</h3>
+						</button>
+					</td>
+					<td class="bullet-subpoint">
+				<span id="consoleText03">
+					In this lesson, we will discuss how to display information in the console in more
+					detail than we have before; as well as, how to get user input from the console with
+					the <em><strong>Scanner</strong></em> class.
+				</span>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+
+</body>
+<script src="../../js/General.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+</html>
