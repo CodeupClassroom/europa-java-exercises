@@ -8,8 +8,10 @@ public class MethodsExercises {
 
 //        System.out.println(divide(b, 0));
 //        factorial();
-        System.out.println(rollDice());
+//        System.out.println(rollDice());
+        hiLow();
     }
+
 
     public static double add(double a, double b) {
         return a + b;
@@ -78,6 +80,21 @@ public class MethodsExercises {
             String answer = scan.next();
             if (answer.toLowerCase().contains("n")) return (int) add(dice1,dice2);
         }
+    }
+
+    public static void hiLow() {
+        int guess = 0;
+        int secret = (int) Math.round(Math.floor(Math.random() * 100 + 1));
+        System.out.println("Let's play a guessing game! Guess what number I'm thinking of?");
+        guess = getInteger(1,100);
+        int guesses = 1;
+        for (;guesses<=10 && guess != secret; guesses++) {
+            if (guess < secret) System.out.println("HIGHER");
+            else if (guess > secret) System.out.println("LOWER");
+            guess = getInteger(1,100);
+        }
+        if (guess == secret) System.out.println("GOOD GUESS! You WIN!!!\nIt took you " + guesses +" guesses.");
+        else System.out.println("Sorry, you ran out of guesses.");
     }
 
 }
