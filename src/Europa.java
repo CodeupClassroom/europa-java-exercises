@@ -38,5 +38,20 @@ public class Europa {
         name.length();
 
 //        System.out.println(num4);
+
+        Student trant = new Student("Trant");
+        trant.program = "Web Development";
+        trant.cohort = "Deimos";
+        trant.location = "San Antonio";
+//        trant.startDate = new Date();
+        trant.drinksCoffee = false;
+        trant.report();
+
+
+        Car tesla = new Car("Tesla", "Model S", 2019);
+        System.out.println(tesla.startYourEngine("forgot"));
+        for (int i = 0;i<100;i++)
+            System.out.println(tesla.drive());
+        System.out.println(tesla.mileage);
     }
 }
