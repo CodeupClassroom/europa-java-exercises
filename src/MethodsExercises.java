@@ -89,8 +89,8 @@ public class MethodsExercises {
         guess = getInteger(1,100);
         int guesses = 1;
         for (;guesses<=10 && guess != secret; guesses++) {
-            if (guess < secret) System.out.println("HIGHER");
-            else if (guess > secret) System.out.println("LOWER");
+            if (guess < secret) System.out.println("\u001B[31mHIGHER");
+            else if (guess > secret) System.out.println("\u001B[32m LOWER");
             guess = getInteger(1,100);
         }
         if (guess == secret) System.out.println("GOOD GUESS! You WIN!!!\nIt took you " + guesses +" guesses.");
