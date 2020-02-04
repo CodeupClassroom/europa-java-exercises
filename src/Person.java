@@ -1,44 +1,50 @@
 public class Person {
-    private String name;
+    
+    private String firstName;
+    private String lastName;
 
-    public Person(String name) {
-        this.name = name;
-//        this.setName(name);
+    public Person(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
-    // returns the person's name
-    public String getName() {
-        return this.name;
+    public String getFirstName() {
+        return firstName;
     }
-    // changes the name property to the passed value
-    public void setName(String name) {
-        this.name = name;
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
-    // prints a message to the console using the person's name
-    public void sayHello() {
-        System.out.printf("Hello, my name is %s\n", this.name);
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+    
+    public String sayHello() {
+        return String.format("Hello from %s %s!", firstName, lastName);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s %s", firstName, lastName);
     }
 
     public static void main(String[] args) {
-        Person a = new Person("Elmo");
+        Person a = new Person("Elmo", "Sesame");
 
-        a.sayHello();
+        System.out.println(a.sayHello());
 
-//        Person person1 = new Person("John");
-//        Person person2 = new Person("John");
-//        System.out.println(person1.getName().equals(person2.getName()));
-//        System.out.println(person1 == person2);
-
-//        Person person1 = new Person("John");
-//        Person person2 = person1;
-//        System.out.println(person1 == person2);
-
-        Person person1 = new Person("John");
+        Person person1 = new Person("John", "Doe");
         Person person2 = person1;
-        System.out.println(person1.getName());
-        System.out.println(person2.getName());
-        person2.setName("Jane");
-        System.out.println(person1.getName());
-        System.out.println(person2.getName());
+        System.out.println(person1.getFirstName());
+        System.out.println(person2.getFirstName());
+        person2.setFirstName("Jane");
+        System.out.println(person1.getFirstName());
+        System.out.println(person2.getFirstName());
+
     }
 }
