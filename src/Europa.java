@@ -1,9 +1,13 @@
+import inheritance.Vehicle;
+
 public class Europa {
     public static void something(String[] args) {
             int num = 7;
         System.out.println("Yada yada!");
     }
     public static void main(String[] args) {
+        Vehicle unicycle = new Vehicle(0);
+//        unicycle.numberOfTires = 1;
         int num = 7;
         System.out.print("Hello World!");
         System.out.print("\n");
