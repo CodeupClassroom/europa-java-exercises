@@ -19,19 +19,19 @@ public class ArraysEx01 {
          * element. Iterate through the array and print out the name of each person in the array.
          */
         Person[] personArray = new Person[3];
-        Person aPerson = new Person();
-        aPerson.setFirstName("First");
-        aPerson.setLastName("Person");
+        Person aPerson = new Person("First","Person");
+//        aPerson.setFirstName("First");
+//        aPerson.setLastName("Person");
         personArray[0] = aPerson;
 
-        aPerson = new Person();
-        aPerson.setFirstName("Second");
-        aPerson.setLastName("Person");
+        aPerson = new Person("Second","Person");
+//        aPerson.setFirstName("Second");
+//        aPerson.setLastName("Person");
         personArray[1] = aPerson;
 
-        aPerson = new Person();
-        aPerson.setFirstName("Third");
-        aPerson.setLastName("Person");
+        aPerson = new Person("Third","Person");
+//        aPerson.setFirstName("Third");
+//        aPerson.setLastName("Person");
         personArray[2] = aPerson;
 
         System.out.println();
@@ -42,9 +42,9 @@ public class ArraysEx01 {
         System.out.println();
 //
 //        // add an element
-        aPerson = new Person();
-        aPerson.setFirstName("Fourth");
-        aPerson.setLastName("Person");
+        aPerson = new Person("Fourth","Person");
+//        aPerson.setFirstName("Fourth");
+//        aPerson.setLastName("Person");
         personArray = addPerson(personArray, aPerson);
         System.out.println("\nThe copies array data:\n" + Arrays.toString(personArray));
 
