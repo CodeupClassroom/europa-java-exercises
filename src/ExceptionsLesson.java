@@ -28,28 +28,32 @@ public class ExceptionsLesson {
 //            ex.printStackTrace();
 //        }
 
-        boolean moveOn = false;
-        do {
-            try {
-                readError();
-                moveOn = true;
-            } catch (Exception ex) {
-                System.out.println("That's not what we asked for");
-//                ex.printStackTrace();
-            }
-        } while (!moveOn);
+//        boolean moveOn = false;
+//        do {
+//            try {
+//                readError();
+//                moveOn = true;
+//            } catch (Exception ex) {
+//                System.out.println("That's not what we asked for");
+////                ex.printStackTrace();
+//            }
+//        } while (!moveOn);
 
 //        anotherBadDate();
-//        try {
-//            newException();
-//        } catch (Exception ex){
-//            System.out.println("This is catching an exception at a higher level");
-//        }
+        try {
+            newException();
+            System.out.println("We probably won't see this message");
+        } catch (Exception ex){
+            System.out.println("This is catching an exception at a higher level");
+        } finally {
+            System.out.println("This message will always come out");
+        }
         System.out.println("If we make it here, it means our program didn't die.");
     }
 
-    static int divide(int a, int b){
+    static int divide(int a, int b) throws DivideByZeroException{
         // java.lang.ArithmeticException: / by zero
+        if (b == 0) throw new DivideByZeroException();
         return a/b;
     }
 
@@ -90,19 +94,17 @@ public class ExceptionsLesson {
     }
 
     static void anotherBadDate(){
-        String dateStr = "2020-02-30";
+        String dateStr = "2020-02-02";
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-
         Date date;
 
-////        try {
-//            date = dateFormat.parse(dateStr);
-//            System.out.println(date);
+        try {
+            date = dateFormat.parse(dateStr);
+            System.out.println(date);
 
-//        } catch (ParseException e) {
-//            e.printStackTrace();
-//        }
-
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
     }
 
     static int readError(){
@@ -113,8 +115,12 @@ public class ExceptionsLesson {
     }
 
     static void newException() throws Exception{
-        throw new Exception();
-
+//        try {
+            throw new Exception();
+//        }
+//        catch (Exception ex) {
+//            System.out.println("An error occurred");
+//        }
 //        try{
 //            throw new Exception();
 //        } catch (Exception ex){
@@ -122,18 +128,18 @@ public class ExceptionsLesson {
 //        }
     }
 
-    static void weKnowSomethingMightBeWrongHere(){
-        try {
+    static void weKnowSomethingMightBeWrongHere() throws FileNotFoundException{
+//        try {
             File file = new File("file.txt"); // file does not exist
 
             FileReader fr = new FileReader(file);
-        } catch (FileNotFoundException e) {
-            System.out.println("File does not exist");
-        }
+//        } catch (FileNotFoundException e) {
+//            System.out.println("File does not exist");
+//        }
     }
 }
 
-class CustomException extends Exception{
+class DivideByZeroException extends Exception {
 
 }
 
