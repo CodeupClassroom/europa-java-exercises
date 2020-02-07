@@ -3,7 +3,9 @@ package util;
 public class InputTest {
     public static void main(String[] args) {
         Input input = new Input();
-//        input.getDouble(77, 77.7);
-        System.out.println(input.yesNo());
+//        input.getInt("Enter an integer");
+        input.getDouble(1,100);
+//        System.out.println(input.yesNo("Are you ready for a weekend?"));
+        System.out.println("Success");
     }
 }
