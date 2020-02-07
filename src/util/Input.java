@@ -10,10 +10,7 @@ public class Input {
     }
 
     public String getString(){
-        String answer;
-        System.out.println("Enter a string: ");
-        answer = this.scanner.next();
-        return answer;
+        return getString("Enter a string: ");
     }
 
     public String getString(String prompt) {
@@ -24,10 +21,7 @@ public class Input {
     }
 
     public boolean yesNo(){
-        String answer;
-        System.out.println("What is your answer? (yes/no): ");
-        answer = this.scanner.next();
-        return answer.toLowerCase().startsWith("y");
+        return yesNo("What is your answer? (yes/no): ");
     }
 
     public boolean yesNo(String prompt){
@@ -38,52 +32,61 @@ public class Input {
     }
 
     public int getInt(int min, int max) {
-        int answer;
-        do {
-            System.out.println("Enter an integer betweeen " + min + " and " + max +": ");
-            answer = this.scanner.nextInt();
-        } while (answer < min || answer > max);
-        return answer;
+        return getInt("Enter an integer betweeen " + min + " and " + max +": ",min,max);
     }
 
     public int getInt(String prompt, int min, int max) {
-        int answer;
+        int answer = Integer.MIN_VALUE;
         do {
             System.out.println(prompt);
-            answer = this.scanner.nextInt();
-        } while (answer < min || answer > max);
+            String response = this.scanner.nextLine();
+            try {
+                answer = Integer.valueOf(response);
+            } catch (NumberFormatException nfe) {
+
+            }
+        } while (answer == Integer.MIN_VALUE || answer < min || answer > max);
         return answer;
     }
 
     public int getInt() {
-        int answer;
-        System.out.println("Enter an integer: ");
-        answer = this.scanner.nextInt();
-        return answer;
+        return getInt("Enter an integer: ");
     }
 
     public int getInt(String prompt) {
-        int answer;
-        System.out.println(prompt);
-        answer = this.scanner.nextInt();
+        int answer = Integer.MIN_VALUE;
+        do {
+            System.out.println(prompt);
+
+            String response = this.scanner.nextLine();
+            try {
+                answer = Integer.valueOf(response);
+            } catch (NumberFormatException nfe) {
+//                System.out.println("Error");
+            }
+        } while (answer == Integer.MIN_VALUE);
+//        answer = this.scanner.nextInt();
         return answer;
     }
 
     public double getDouble(double min, double max) {
-        double answer;
-        do {
-            System.out.println("Enter a double betweeen " + min + " and " + max +": ");
-            answer = this.scanner.nextDouble();
-        } while (answer < min || answer > max);
-        return answer;
+        return getDouble("Enter a double betweeen " + min + " and " + max +": ",min,max);
     }
 
     public double getDouble(String prompt, double min, double max) {
-        double answer;
+        double answer = 0;
+        boolean success = false;
         do {
             System.out.println(prompt);
-            answer = this.scanner.nextDouble();
-        } while (answer < min || answer > max);
+            String response = this.scanner.nextLine();
+            try {
+                answer = Double.valueOf(response);
+                success = true;
+            } catch (NumberFormatException nfe) {
+                success = false;
+            }
+//            answer = this.scanner.nextDouble();
+        } while (!success || answer < min || answer > max);
         return answer;
     }
 
@@ -92,9 +95,18 @@ public class Input {
     }
 
     public double getDouble(String prompt) {
-        double answer;
-        System.out.println(prompt);
-        answer = this.scanner.nextDouble();
+        double answer = 0;
+        boolean success = false;
+        do {
+            System.out.println(prompt);
+            String response = this.scanner.nextLine();
+            try {
+                answer = Double.valueOf(response);
+                success = true;
+            } catch (NumberFormatException nfe) {
+
+            }
+        } while (!success);
         return answer;
     }
 
